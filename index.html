@@ -11,42 +11,40 @@
 <body class="bg-dark">
     <div class="container">
         <div class="row d-flex flex-column">
-            <div class="col text-white resultado">
-                <span>000000</span>
+            <p id="resultado"></p>
+            <div class="col">
+                <button onclick="limpar()" id="ac" class="botao bg-secondary">AC</button>
+                <button onclick="insert('**2')" id="" class="botao bg-secondary">²</button>
+                <button onclick="insert('%')" id="%" class="botao bg-secondary">%</button>
+                <button onclick="insert('/')" id="/" class="botao bg-warning">/</button>
             </div>
             <div class="col">
-                <button id="ac" class="botao bg-secondary">AC</button>
-                <button id="" class="botao bg-secondary">+/-</button>
-                <button id="%" class="botao bg-secondary">%</button>
-                <button id="/" class="botao bg-warning">/</button>
+                <button onclick="insert('7')" id="7" class="botao bg-secondary">7</button>
+                <button id="8" onclick="insert('8')" class="botao bg-secondary">8</button>
+                <button onclick="insert('9')" id="9" class="botao bg-secondary">9</button>
+                <button onclick="insert('*')" id="x" class="botao bg-warning">x</button>
             </div>
             <div class="col">
-                <button id="7" class="botao bg-secondary">7</button>
-                <button id="8" class="botao bg-secondary">8</button>
-                <button id="9" class="botao bg-secondary">9</button>
-                <button id="x" class="botao bg-warning">x</button>
+                <button onclick="insert('4')" id="4" class="botao bg-secondary">4</button>
+                <button onclick="insert('5')" id="5" class="botao bg-secondary">5</button>
+                <button onclick="insert('6')" id="6" class="botao bg-secondary">6</button>
+                <button onclick="insert('-')" id="-" class="botao bg-warning">-</button>
             </div>
             <div class="col">
-                <button id="4" class="botao bg-secondary">4</button>
-                <button id="5" class="botao bg-secondary">5</button>
-                <button id="6" class="botao bg-secondary">6</button>
-                <button id="-" class="botao bg-warning">-</button>
+                <button onclick="insert('1')" id="1" class="botao bg-secondary">1</button>
+                <button onclick="insert('2')" id="2" class="botao bg-secondary">2</button>
+                <button onclick="insert('3')" id="3" class="botao bg-secondary">3</button>
+                <button onclick="insert('+')" id="+" class="botao bg-warning">+</button>
             </div>
             <div class="col">
-                <button id="1" class="botao bg-secondary">1</button>
-                <button id="2" class="botao bg-secondary">2</button>
-                <button id="3" class="botao bg-secondary">3</button>
-                <button id="+" class="botao bg-warning">+</button>
-            </div>
-            <div class="col-12">
-                <button id="0" class="botao bg-secondary">0</button>
-                <button class="botao bg-secondary">0</button>
-                <button id="," class="botao bg-secondary">,</button>
-                <button id="=" class="botao bg-warning">=</button>
+                <button onclick="insert('0')" id="0" class=" botaoEspec bg-secondary">0</button>
+                <button onclick="opr('.')" id="," class="botao bg-secondary">,</button>
+                <button onclick="calcular()" id="=" class="botao bg-warning">=</button>
             </div>
             
         </div>
     </div>
     
+    <script src="js/scrpit.js"></script>
 </body>
 </html>

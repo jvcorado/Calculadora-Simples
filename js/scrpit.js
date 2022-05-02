@@ -1,9 +1,21 @@
-const ac = document.querySelector("#ac") = ''
-const porcetagem = document.querySelector("#%") = '%'
-const divisao = document.querySelector("#/") = '/'
-const sete = document.querySelector("#7") = '7'
-const oito = document.querySelector("#8") = ''
 
-function resultado(){
-    
+
+function insert(num){
+    let numero = document.getElementById('resultado').innerHTML
+    document.getElementById('resultado').innerHTML = numero + num;
+}
+
+function limpar(){
+    document.getElementById('resultado').innerHTML = '';
+}
+
+function calcular(){
+    let resultado = document.getElementById('resultado').innerHTML
+
+    if(resultado){
+        document.getElementById('resultado').innerHTML = eval(resultado);
+    }
+    else{
+        alert('Digite uma operação')
+    }
 }
